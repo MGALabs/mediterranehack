@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Il primo evento di Cybersecurity nel Sud Italia">
+  <meta name="author" content="MGALabs">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Mediterranehack - Il primo evento di Cybersecurity nel Sud Italia</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container-fluid h-100">
+    <div class="row flex-row h-100 align-items-center">
+      <div class="col-lg-12 text-center p-5">
+        <img src="img/mediterranehack_white.png" class="img-fluid img-cover">
+        <!-- <h1 class="mt-5">Mediterranehack</h1> -->
+        <h2 class="mt-5">18 aprile 2020 <span class="d-none d-sm-inline-block">-</span> Salerno</h2>
+        <h3 class="mb-5">Il primo evento di Cybersecurity nel Sud Italia</h3>
+        <hr class="my-5">
+        <ul class="list-inline mt-5">
+            <li class="list-inline-item text-center"><span id="days"></span><br>giorni</li>
+            <li class="list-inline-item text-center"><span id="hours"></span><br>ore</li>
+            <li class="list-inline-item text-center"><span id="minutes"></span><br>min</li>
+            <li class="list-inline-item text-center"><span id="seconds"></span><br>sec</li>
+        </ul>
+        <footer>
+          <div class="container-fluid">
+            <div class="col-lg-12 text-center mt-5">
+              <img src="img/mediasecure.png" class="img-fluid img-footer" width="140">
+              <img src="img/logo-mga-white.png" class="img-fluid img-footer" width="200">
+            </div>
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#252e39"
+            },
+            "button": {
+              "background": "#14a7d0"
+            }
+          },
+          "theme": "edgeless",
+          "content": {
+            "message": "Questo sito utilizza i cookies per fornirti una migliore esperienza di navigazione. Per maggiori informazioni:",
+            "link": "clicca qui",
+            "dismiss": "Ho capito",
+            "href": "privacy-policy.html"
+          }
+        })
+      });
+    </script>
+
+</body>
+
+</html>

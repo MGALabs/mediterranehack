@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700,900&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Exo';
+    background: url('../img/mediterraneback.jpg');
+    background-attachment: fixed;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+*{
+    --orange: #eb663b;
+    --white: #fff;
+}
+
+h1,h2,h3 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.small-p p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.img-cover {
+    /* height: 50vh; */
+    max-height: 400px;
+}
+.list-inline-item {
+    width: 64px;    
+}
+
+
+@media (max-width:768px) {
+    .list-inline-item {
+        width: 55px;    
+    }
+
+    .img-footer {
+        width: 160px;
+        margin: 15px auto;
+    }
+}
+
+.img-footer {
+    /* width: 190px; */
+    margin: 15px 30px;
+}
+
+hr { 
+    background: url('../img/barra_bianca.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 8px;
+    border: 0;
+    position: relative;
+}
