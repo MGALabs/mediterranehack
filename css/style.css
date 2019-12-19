@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: 'Exo';
+    font-family: 'Exo', Helvetica, Arial, sans-serif;
     background: url('../img/mediterraneback.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -207,6 +207,16 @@ p {
 .list-inline-item {
     width: 64px;    
 }
+
+@media (min-width:1920px) {
+    body{
+        background: url('../img/mediterraneback-xl.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 
 @media (min-width:768px) and (max-width:991px) {
     .back.right {    
