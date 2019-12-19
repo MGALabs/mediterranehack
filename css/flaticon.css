@@ -1,0 +1,58 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/12/2019 15:51
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-boat:before { content: "\f100"; }
+.flaticon-wave:before { content: "\f101"; }
+.flaticon-fish:before { content: "\f102"; }
+.flaticon-beach:before { content: "\f103"; }
+.flaticon-sun:before { content: "\f104"; }
+.flaticon-fish-1:before { content: "\f105"; }
+.flaticon-clam:before { content: "\f106"; }
+.flaticon-starfish:before { content: "\f107"; }
+.flaticon-puffer:before { content: "\f108"; }
+.flaticon-octopus:before { content: "\f109"; }
+.flaticon-eel:before { content: "\f10a"; }
+.flaticon-fishes:before { content: "\f10b"; }
+.flaticon-whale:before { content: "\f10c"; }
+.flaticon-ship:before { content: "\f10d"; }
+.flaticon-barrel:before { content: "\f10e"; }
+.flaticon-message-in-a-bottle:before { content: "\f10f"; }
+.flaticon-lifesaver:before { content: "\f110"; }
+.flaticon-shark:before { content: "\f111"; }
+.flaticon-seagull:before { content: "\f112"; }
+.flaticon-placeholder:before { content: "\f113"; }
+.flaticon-aqualung:before { content: "\f114"; }
+.flaticon-telescope:before { content: "\f115"; }
+.flaticon-binoculars:before { content: "\f116"; }
+.flaticon-lighthouse:before { content: "\f117"; }
+.flaticon-sailboat:before { content: "\f118"; }
+.flaticon-pearl:before { content: "\f119"; }

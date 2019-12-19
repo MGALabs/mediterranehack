@@ -8,29 +8,196 @@ body {
     font-family: 'Exo';
     background: url('../img/mediterraneback.jpg');
     background-attachment: fixed;
-    color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--black);
     font-size: 20px;
+    line-height: 1.5;
     font-weight: 700;
 }
 
 *{
-    --orange: #eb663b;
+    --green: #00A09A;
+    --yellow: #F9B233;
     --white: #fff;
+    --blue: #1D70B7;
+    --black: #000;
 }
 
-h1,h2,h3 {
-    color: var(--white);
-    font-weight: 700;
+/* bootstrap override*/
+.p-5 {
+    padding: 6rem!important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+a, a:hover {
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.5;
+}
+
+h2 {
+    color: var(--black);
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
 }
 
 .small-p p {
     font-weight: 500;
     font-size: 16px;
+}
+
+.btn {
+    padding: 1.2rem 3rem;
+    background: var(--yellow);
+    border-radius: 0;
+}
+
+.btn:hover {
+    background: var(--white);
+}
+
+.btn-blue {
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+.btn-blue:hover {
+    background: var(--yellow);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    bottom: 0;        
+}
+
+.whiteback {
+    background: var(--white);
+}
+
+.greenback {
+    background: var(--green);
+}
+
+.back.right {    
+    left: 15%;
+    right: 0;
+}
+
+.back.left {    
+    left: 0;
+    right: 15%;
+}
+
+.section {
+    position: relative;
+    margin-top:90px;
+    margin-bottom:90px;
+}
+
+.section>.inner {
+    /* background: var(--white); */
+    
+}
+
+#slider {
+    color: var(--white);
+}
+
+#slider h4, 
+#slider h3 {
+    color: var(--white);
+}
+
+#slider h4 {
+    font-weight: 1.8rem;
+}
+
+.cta p, .cta h2, .cta h3, .cta h4 {
+    color: var(--white);
+}
+
+.cta-icon::before{
+    font-size: 12rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.square {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.inner-square {
+    height: 100%;
+    border: 10px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-square {
+    position: relative;
+}
+
+.outer-square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.multiple-items-xs .outer-square .square {
+    padding: 10px;
+}
+
+.big-tilde {
+    width: 30%;
+}
+
+.slick-prev, .slick-next {
+    width: 2rem;
+    height: 2rem;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-size: 2rem;
+    line-height: 1;
+    opacity: .75;
+    color: var(--yellow);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+    content: "\f053" !important;
+}
+
+.slick-next:before {
+    content: "\f054" !important;
 }
 
 .img-cover {
@@ -41,28 +208,86 @@ h3 {
     width: 64px;    
 }
 
+@media (min-width:768px) and (max-width:991px) {
+    .back.right {    
+        left: 10%;        
+    }
+    
+    .back.left {            
+        right: 10%;
+    }
+}
 
-@media (max-width:768px) {
+
+@media (max-width:767px) {
+    body {
+        font-size: 18px;
+    }
+    /* bootstrap override*/
+    .p-5 {
+        padding: 4.2rem!important;        
+    }
+
+    .back.right {    
+        left: 5%;        
+    }
+    
+    .back.left {            
+        right: 5%;
+    }
+
     .list-inline-item {
         width: 55px;    
     }
 
     .img-footer {
-        width: 160px;
-        margin: 15px auto;
+        /* width: 160px;
+        margin: 15px auto; */
     }
 }
 
 .img-footer {
     /* width: 190px; */
-    margin: 15px 30px;
+    /* margin: 15px 30px; */
 }
 
-hr { 
-    background: url('../img/barra_bianca.png') no-repeat top center;
+hr {
+    background: url('../img/barra-g.svg') no-repeat top left;
     background-size: contain;
     display: block;
-    height: 8px;
+    height: 12px;
     border: 0;
     position: relative;
+}
+
+hr.white { 
+    background: url('../img/barra-b.svg') no-repeat top center;    
+    height: 8px;    
+}
+
+hr.yellow {
+    background: url('../img/barra-y.svg') no-repeat top left;
+    background-size: contain;
+}
+
+footer {
+    font-size: 14px;
+    color: var(--white);
+}
+
+footer a {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+.upper-footer {
+    background: var(--white);
+}
+
+.lower-footer {
+    background: var(--green);
 }
