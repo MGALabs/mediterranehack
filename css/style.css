@@ -32,6 +32,7 @@ body {
 }
 
 a, a:hover {
+    color: var(--blue);
     text-decoration: none;
     transition: all 0.2s ease-out;
 }
@@ -53,6 +54,10 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h5 {
     font-weight: 700;
 }
 
@@ -132,7 +137,7 @@ p {
 }
 
 #slider h4 {
-    font-weight: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .cta p, .cta h2, .cta h3, .cta h4 {
@@ -201,65 +206,168 @@ p {
 }
 
 .img-cover {
-    /* height: 50vh; */
     max-height: 400px;
 }
+
 .list-inline-item {
     width: 64px;    
 }
 
-@media (min-width:1920px) {
-    body{
-        background: url('../img/mediterraneback-xl.jpg');
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+/* .widgets .icon{
+    margin-right: 15px;
+    color: var(--blue);
 }
 
-
-@media (min-width:768px) and (max-width:991px) {
-    .back.right {    
-        left: 10%;        
-    }
-    
-    .back.left {            
-        right: 10%;
-    }
+.widgets .icon::before {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-left: 0;
 }
 
+.widgets h5 {
+    display: inline-block;
+    line-height: 4rem;
+    vertical-align: middle;
+} */
 
-@media (max-width:767px) {
-    body {
-        font-size: 18px;
-    }
-    /* bootstrap override*/
-    .p-5 {
-        padding: 4.2rem!important;        
-    }
+/* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
-    .back.right {    
-        left: 5%;        
-    }
-    
-    .back.left {            
-        right: 5%;
-    }
-
-    .list-inline-item {
-        width: 55px;    
-    }
-
-    .img-footer {
-        /* width: 160px;
-        margin: 15px auto; */
-    }
+.mc_embed_signup{
+    font-family: 'Exo', Helvetica,  Arial, sans-serif;
+    clear:left; 
+    width:100%;
 }
 
-.img-footer {
-    /* width: 190px; */
-    /* margin: 15px 30px; */
+.mc_embed_signup form {
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
+
+.mc-field-group {
+    display: inline-block;
+}
+
+/* positions input field horizontally */
+
+.mc_embed_signup input.email {
+    vertical-align: top;    
+    font-size: 14px;
+    border: 2px solid var(--white);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
+    color: var(--white);
+    background-color: transparent;    
+    width: 220px;
+}
+
+#mc_embed_signup.mc_embed_signup input.email {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+#mc_embed_signup_2.mc_embed_signup #mc_embed_signup_scroll_2 { 
+    text-align: left;
+}
+
+#mc_embed_signup_2.mc_embed_signup input.email {
+    border: 1px solid var(--blue);
+    color: var(--black);
+    width: 60%;
+}
+
+.mc_embed_signup label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.mc_embed_signup .clear {
+    display: inline-block;
+}
+
+/* positions button horizontally in line with input */
+
+.mc_embed_signup .button {
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;    
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 0;
+    transition: all 0.23s ease-in-out 0s;
+}
+#mc_embed_signup_2.mc_embed_signup .button {
+    position: relative;
+    left: -6px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.mc_embed_signup .button:hover {    
+    cursor: pointer;
+}
+
+.mc_embed_signup div#mce-responses {
+    float: left;
+    top: -1.4em;
+    padding: 0em .5em 0em .5em;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 5%;
+    clear: both;
+}
+
+.mc_embed_signup div.response {
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: bold;
+    float: left;
+    top: -1.5em;
+    z-index: 1;
+    width: 80%;
+}
+
+.mc_embed_signup #mce-error-response {
+    display: none;
+}
+
+.mc_embed_signup #mce-success-response {
+    color: #529214;
+    display: none;
+}
+
+.mc_embed_signup label.error {
+    display: block;
+    float: none;
+    width: auto;
+    margin-left: 1.05em;
+    text-align: left;
+    padding: .5em 0;
+}
+
+.mc_embed_signup input::placeholder {color: var(--white) !important;}
+.mc_embed_signup input::-webkit-input-placeholder {color: var(--white) !important;}
+.mc_embed_signup input:-ms-input-placeholder {color: var(--white) !important;}
+.mc_embed_signup input::-moz-placeholder {color: var(--white) !important;}
+
+#mc_embed_signup_2.mc_embed_signup input::placeholder {color: #aaa !important;}
+.mc_embed_signup input::-webkit-input-placeholder {color: var(--white) !important;}
+.mc_embed_signup input:-ms-input-placeholder {color: var(--white) !important;}
+.mc_embed_signup input::-moz-placeholder {color: var(--white) !important;}
 
 hr {
     background: url('../img/barra-g.svg') no-repeat top left;
@@ -300,4 +408,129 @@ footer a:hover {
 
 .lower-footer {
     background: var(--green);
+}
+
+@media (max-width: 768px) {
+    .mc_embed_signup {
+        width: 300px;
+        margin: auto; 
+    }
+    .mc_embed_signup input.email {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .mc_embed_signup .clear {
+        display: block;
+        width: 100%
+    }
+    .mc_embed_signup .button {
+        width: 100%;
+        margin: 0;
+    }
+    .mc_embed_signup input::placeholder {text-align: center;}
+    .mc_embed_signup input::-webkit-input-placeholder {text-align: center;}
+    .mc_embed_signup input:-ms-input-placeholder {text-align: center;}
+    .mc_embed_signup input::-moz-placeholder {text-align: center;}
+
+    #mc_embed_signup_2.mc_embed_signup input.email {        
+        width: 100%;
+    }
+    
+    #mc_embed_signup_2.mc_embed_signup #mc_embed_signup_scroll_2 { 
+        text-align: center;
+    }
+
+    #mc_embed_signup_2.mc_embed_signup .button {
+        position: relative;
+        left: 0;
+}
+
+
+@media (min-width:1920px) {
+    body{
+        background: url('../img/mediterraneback-xl.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+@media (max-width:768px) and (min-resolution: 2dppx), /* Standard syntax */ 
+(max-width:767px) and (-webkit-min-device-pixel-ratio: 2)  /* Safari & Android Browser */ { 
+    body{
+        font-size: 18px;
+        background: url('../img/mediterraneback-xs@2x.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:991px) {
+    .back.right {    
+        left: 10%;        
+    }
+    
+    .back.left {            
+        right: 10%;
+    }
+}
+
+
+@media (max-width:768px) {
+    body {
+        font-size: 18px;
+        background: url('../img/mediterraneback-xs.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    h2 {
+        font-size: 2.35rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4, #slider h4 {
+        font-size: 1.2rem;
+    }
+    .img-cover {
+        max-height: 25vh;
+    }
+    /* bootstrap override*/
+    .p-5 {
+        padding: 4.2rem!important;        
+    }
+
+    .back.right {    
+        left: 5%;        
+    }
+    
+    .back.left {            
+        right: 5%;
+    }
+
+    .list-inline-item {
+        width: 48px;    
+    }
+
+    .img-footer {
+        /* width: 160px;
+        margin: 15px auto; */
+    }
+
+    .widgets-container {
+        text-align: center;
+    }
+}
+
+.img-footer {
+    /* width: 190px; */
+    /* margin: 15px 30px; */
 }
