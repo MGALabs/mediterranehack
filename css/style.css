@@ -37,6 +37,10 @@ a, a:hover {
     transition: all 0.2s ease-out;
 }
 
+.small {
+    font-size: 70%;
+}
+
 h1,h2,h3,h4,h5,h6 {
     line-height: 1.5;
 }
@@ -168,6 +172,14 @@ p {
 .inner-square-fixedh {
     height: 120px;
     margin: 10px;
+    border: 5px solid #ddd;
+    width: auto;
+    padding: 10px;
+    transition: border 0.2s ease-out;
+}
+
+.inner-square-fixedh:hover {
+    border: 5px solid var(--yellow);
 }
 
 .outer-square {
@@ -275,6 +287,10 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 #mc_embed_signup.mc_embed_signup input.email {
     border: 2px solid var(--white);
     color: var(--white);
+}
+
+#mc_embed_signup a {
+    color: var(--yellow);
 }
 
 #mc_embed_signup_2.mc_embed_signup #mc_embed_signup_scroll_2 { 

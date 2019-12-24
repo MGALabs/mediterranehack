@@ -33,3 +33,22 @@ $('.multiple-items').slick({
   prevArrow: '<button type="button" class="slick-prev fas fa-chevron-left">Previous</button>',
   nextArrow: '<button type="button" class="slick-next fas fa-chevron-right">Next</button>'
 });
+
+$(document).ready(function() {
+  $('#mc_embed_signup_2').validetta({
+    realTime : true,
+    bubblePosition: 'bottom',
+    bubbleGapLeft: -9,
+    bubbleGapTop: 12
+  });
+  $('#mc_embed_signup').validetta({
+    realTime : true,
+    bubblePosition: 'bottom',
+    bubbleGapLeft: -9,
+    bubbleGapTop: 12
+  });
+});
+
+
+
+
