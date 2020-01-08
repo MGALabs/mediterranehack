@@ -433,7 +433,8 @@ footer a:hover {
 
 @media (max-width: 768px) {
     .mc_embed_signup {
-        width: 300px;
+		width: 300px;
+		max-width: 100%;
         margin: auto; 
     }
     .mc_embed_signup input.email {
@@ -548,6 +549,31 @@ footer a:hover {
 
     .widgets-container {
         text-align: center;
+    }
+}
+
+@media (max-width:575px) {
+	.h-auto-xs {
+		height: auto !important;
+	}
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    h4, #slider h4 {
+        font-size: 1.2rem;
+    }
+    /* bootstrap override*/
+    .p-5 {
+        padding: 2.5rem!important;        
+	}
+	
+	#slider .p-5 {
+		padding-bottom: 0!important;
+	}
+
+    .list-inline-item {
+        width: 45px;    
     }
 }
 
