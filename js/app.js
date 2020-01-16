@@ -47,6 +47,12 @@ $(document).ready(function() {
     bubbleGapLeft: -9,
     bubbleGapTop: 12
   });
+  $('#mc_embed_signup_3').validetta({
+    realTime : true,
+    bubblePosition: 'bottom',
+    bubbleGapLeft: -9,
+    bubbleGapTop: 12
+  });
 });
 
 
