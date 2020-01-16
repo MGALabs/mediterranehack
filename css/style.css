@@ -195,8 +195,8 @@ p {
 }
 
 .inner-square-fixedh {
-    height: 120px;
-    margin: 10px;
+    height: 170px;
+	margin: 10px 10px 20px;
     border: 5px solid #ddd;
     width: auto;
     padding: 10px;
@@ -205,6 +205,10 @@ p {
 
 .inner-square-fixedh:hover {
     border: 5px solid var(--yellow);
+}
+
+.inner-square-fixedh img:not(.big-tilde) {
+	width: 150px;
 }
 
 .outer-square {
