@@ -41,6 +41,9 @@ body {
 }
 
 /* bootstrap override*/
+.h-min100 {
+	min-height: 100% !important;
+}
 .p-5 {
     padding: 6rem!important;
     padding-top: 3rem !important;
@@ -105,6 +108,12 @@ p {
     border-radius: 0;
 }
 
+.btn-square {
+	padding: 0;
+	height: 60px;
+	width: 60px;
+}
+
 .btn:hover {
     background: var(--white);
 }
@@ -127,7 +136,164 @@ p {
     bottom: 0;        
 }
 
-.whiteback {
+.navbar {
+	padding: 1.5rem;
+}
+
+.navbar .nav-link {
+	font-size: 1rem;
+	color: var(--white);
+	opacity: .6;
+	transition: all 0.2s ease-out;
+	line-height: 1;
+}
+
+.navbar .nav-link:hover {
+	opacity: 1;
+}
+
+.navbar .active .nav-link {
+	color: var(--yellow);
+	opacity: 1;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {		
+		padding-right: .75rem;
+		padding-left: .75rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.btn-square {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 99999;
+    background: var(--green);
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar hr {
+	padding: 0 1.5rem;
+	background-origin: content-box;
+	height: 9px;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: var(--green);
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: var(--green);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 1rem;
+    /* background: var(--white); */
+}
+
+#sidebar ul.components {
+    padding: 1rem 0;
+    /* border-bottom: 1px solid #47748b; */
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: .5rem 1.5rem;
+    font-size: 1em;
+	display: block;
+	color: #fff;
+	letter-spacing: 0.02rem;
+	font-weight: 400;
+}
+
+#sidebar ul li a:hover {
+    color: var(--black);
+	background: var(--yellow);
+	font-weight: 700;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: var(--black);
+	background: var(--yellow);
+	font-weight: 700;
+}
+
+#sidebar .social-block li a {
+	padding: .5rem;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: var(--white);
+}
+
+/* .whiteback {
     background: var(--white);
 }
 
@@ -137,13 +303,13 @@ p {
 
 .back.right {    
     left: 15%;
-    right: 0;
+    right: 15%;
 }
 
 .back.left {    
-    left: 0;
+    left: 15%;
     right: 15%;
-}
+} */
 
 .section {
     position: relative;
@@ -152,8 +318,11 @@ p {
 }
 
 .section>.inner {
-    /* background: var(--white); */
-    
+    background: var(--white);
+}
+
+.section.cta>.inner {
+    background: var(--green);
 }
 
 #slider {
@@ -184,6 +353,20 @@ p {
     width: 100%;
     height: 100%;
     padding: 20px;
+}
+
+.speaker-detail .square {
+	padding-top: 0;
+}
+
+.speaker-detail .outer-square{
+	width: 300px;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+	.speaker-detail .outer-square{
+		width: 250px;
+	}
 }
 
 .inner-square {
@@ -252,11 +435,16 @@ p {
 }
 
 .img-cover {
-    max-height: 400px;
+    max-height: 300px;
 }
 
-.list-inline-item {
+#slider .list-inline-item {
     width: 64px;    
+}
+
+.program-list strong{
+	display: inline-block;
+	width: 90px;
 }
 
 /* .widgets .icon{
@@ -446,6 +634,10 @@ hr.white {
 hr.yellow {
     background: url('../img/barra-y.svg') no-repeat top left;
     background-size: contain;
+}
+
+.text-center hr {
+	background-position: center;
 }
 
 footer {

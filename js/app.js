@@ -1,30 +1,6 @@
 //init svgeezy
 svgeezy.init(false, 'png');
 
-//init timer
-const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-
-let countDown = new Date('Apr 18, 2020 09:30:00').getTime(),
-  x = setInterval(function() {
-
-      let now = new Date().getTime(),
-        distance = countDown - now;
-
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-    
-    //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
-    //}
-}, second)
-
 //init slick
 $('.multiple-items').slick({
   infinite: true,
@@ -55,6 +31,24 @@ $(document).ready(function() {
   });
 });
 
+//sidebar 
+$(document).ready(function () {
+	$("#sidebar").mCustomScrollbar({
+		theme: "minimal"
+	});
+
+	$('#dismiss, .overlay').on('click', function () {
+		$('#sidebar').removeClass('active');
+		$('.overlay').removeClass('active');
+	});
+
+	$('#sidebarCollapse').on('click', function () {
+		$('#sidebar').addClass('active');
+		$('.overlay').addClass('active');
+		$('.collapse.in').toggleClass('in');
+		$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+	});
+});    
 
 
 
