@@ -50,10 +50,15 @@ body {
     padding-bottom: 3rem !important;
 }
 
-a, a:hover {
+a{
     color: var(--blue);
     text-decoration: none;
     transition: all 0.2s ease-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--yellow);
 }
 
 .cta a:not(.btn) {
@@ -355,12 +360,57 @@ ul ul a {
     padding: 20px;
 }
 
+@media (max-width: 1199px) {
+	.square {
+		padding: 10px;
+	}
+}
+ 
+.overlay-square {
+	opacity: 0;
+	background: var(--yellow);
+	transition: all 0.2s ease-out;
+	position: absolute;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+	right: 0;
+	margin: 0px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	color: var(--black);
+}
+
+.overlay-square h4 {
+	color: var(--black);
+}
+
+.overlay-square:hover {
+	margin: 20px;
+	opacity: 1;	
+}
+
 .speaker-detail .square {
 	padding-top: 0;
 }
 
 .speaker-detail .outer-square{
 	width: 300px;
+}
+
+.speaker-detail .inner-square {
+	overflow: hidden;
+}
+
+.speaker-detail .inner-square .img-fluid {
+	width: 110%;
+	max-width: none;
+}
+
+.speaker-detail .social-block a:hover{
+	color: var(--yellow);
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -638,6 +688,16 @@ hr.yellow {
 
 .text-center hr {
 	background-position: center;
+}
+
+hr.tilde {
+    background: url('../img/tilde.svg') no-repeat top center;
+    background-size: contain;
+    display: block;
+	height: 12px;
+	margin: 60px 0;
+    border: 0;
+    position: relative;
 }
 
 footer {
