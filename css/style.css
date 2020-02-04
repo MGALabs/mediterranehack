@@ -377,7 +377,8 @@ ul ul a {
     left: 0;
 	right: 0;
 	margin: 0px;
-    display: flex;
+	display: flex;
+	flex-direction: column;
     align-items: center;
 	justify-content: center;
 	color: var(--black);
@@ -422,7 +423,8 @@ ul ul a {
 .inner-square {
     height: 100%;
     border: 10px solid var(--green);
-    display: flex;
+	display: flex;
+	flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -442,6 +444,10 @@ ul ul a {
 
 .inner-square-fixedh img:not(.big-tilde) {
 	width: 150px;
+}
+
+.soon {
+	opacity: .5;
 }
 
 .outer-square {
@@ -671,16 +677,17 @@ hr {
     /* background: url('../img/barra-g.svg') no-repeat top left; */
     /* background-size: contain; */
     display: block;
-    height: 8px;
+    height: 6px;
     border: 0;
     position: relative;
     background: var(--green);
-    width: 250px;
+	width: 100px;
+	margin-left: 0;
 }
 
 hr.white { 
     background: var(--white);
-    height: 8px;    
+    height: 6px;    
 }
 
 hr.yellow {
@@ -701,7 +708,7 @@ hr.tilde {
     background-size: contain;
     display: block;
 	height: 12px;
-	margin: 60px 0;
+	margin: 60px auto;
     border: 0;
     position: relative;
 }
