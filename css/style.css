@@ -668,22 +668,28 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 .mc_embed_signup input::-moz-placeholder {color: var(--white) !important;}
 
 hr {
-    background: url('../img/barra-g.svg') no-repeat top left;
-    background-size: contain;
+    /* background: url('../img/barra-g.svg') no-repeat top left; */
+    /* background-size: contain; */
     display: block;
-    height: 12px;
+    height: 8px;
     border: 0;
     position: relative;
+    background: var(--green);
+    width: 250px;
 }
 
 hr.white { 
-    background: url('../img/barra-b.svg') no-repeat top center;    
+    background: var(--white);
     height: 8px;    
 }
 
 hr.yellow {
-    background: url('../img/barra-y.svg') no-repeat top left;
-    background-size: contain;
+	background: var(--yellow);
+	width: 160px;
+}
+
+.cta hr.yellow {
+	margin-left: 0;
 }
 
 .text-center hr {
