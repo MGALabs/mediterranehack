@@ -360,12 +360,6 @@ ul ul a {
     padding: 20px;
 }
 
-@media (max-width: 1199px) {
-	.square {
-		padding: 10px;
-	}
-}
- 
 .overlay-square {
 	opacity: 0;
 	background: var(--yellow);
@@ -376,7 +370,7 @@ ul ul a {
     bottom: 0;
     left: 0;
 	right: 0;
-	margin: 0px;
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -391,6 +385,16 @@ ul ul a {
 .overlay-square:hover {
 	margin: 20px;
 	opacity: 1;	
+}
+
+@media (max-width: 1199px) {
+	.square {
+		padding: 10px;
+	}
+
+	.overlay-square, .overlay-square:hover {
+		margin: 10px;
+	}
 }
 
 .speaker-detail .square {
