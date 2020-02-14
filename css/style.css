@@ -162,6 +162,15 @@ p {
 	opacity: 1;
 }
 
+#sidebar ul li.nav-item .btn {
+	color: var(--black) !important;
+	font-weight: bold;
+}
+
+#sidebar ul li.nav-item .btn:hover {
+	background: var(--white);
+}
+
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-nav .nav-link {		
 		padding-right: .75rem;
